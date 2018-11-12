@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" stylesheets="@css/stylesheet.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="InventoryController">
+   <children>
+      <BorderPane prefHeight="400.0" prefWidth="600.0">
+         <right>
+            <VBox prefHeight="297.0" prefWidth="199.0" BorderPane.alignment="CENTER">
+               <children>
+                  <TextField fx:id="adminId" prefHeight="36.0" prefWidth="199.0" />
+                  <TextField fx:id="adminName" prefHeight="34.0" prefWidth="199.0" />
+                  <TextField fx:id="adminCost" prefHeight="31.0" prefWidth="199.0" />
+                  <ChoiceBox fx:id="adminChoiceCategory" prefHeight="33.0" prefWidth="198.0" />
+                  <TextArea fx:id="adminDescription" prefHeight="81.0" prefWidth="199.0" />
+                  <Button mnemonicParsing="false" onAction="#handleReadBtn" prefHeight="46.0" prefWidth="199.0" text="Read" />
+                  <Button mnemonicParsing="false" onAction="#handleDeleteBtn" prefHeight="47.0" prefWidth="199.0" text="Delete" />
+               </children>
+            </VBox>
+         </right>
+         <center>
+            <VBox prefHeight="297.0" prefWidth="231.0" BorderPane.alignment="CENTER">
+               <children>
+                  <Label prefHeight="32.0" prefWidth="201.0" text="Id" />
+                  <Label prefHeight="31.0" prefWidth="201.0" text="Name" />
+                  <Label prefHeight="30.0" prefWidth="201.0" text="Cost" />
+                  <Label prefHeight="34.0" prefWidth="201.0" text="Category" />
+                  <Label prefHeight="85.0" prefWidth="201.0" text="Description" />
+                  <Button mnemonicParsing="false" onAction="#handleCreateBtn" prefHeight="49.0" prefWidth="169.0" text="Create" />
+                  <Button mnemonicParsing="false" onAction="#handleUpdateBtn" prefHeight="45.0" prefWidth="169.0" text="Update" />
+               </children>
+            </VBox>
+         </center>
+         <top>
+            <VBox prefHeight="42.0" prefWidth="600.0" BorderPane.alignment="CENTER">
+               <children>
+                  <Label prefHeight="32.0" prefWidth="600.0" text="Choose category" />
+                  <ComboBox fx:id="adminComboCategory" onAction="#changedCategoryCombo" prefHeight="38.0" prefWidth="600.0" />
+               </children>
+            </VBox>
+         </top>
+         <bottom>
+            <HBox prefHeight="52.0" prefWidth="600.0" BorderPane.alignment="CENTER">
+               <children>
+                  <Button fx:id="backButton" mnemonicParsing="false" onAction="#handleBackBtn" prefHeight="57.0" prefWidth="107.0" text="Back" />
+                  <Label fx:id="adminFeedback" prefHeight="57.0" prefWidth="508.0" />
+               </children>
+            </HBox>
+         </bottom>
+         <left>
+            <TextArea fx:id="adminDisplay" prefHeight="296.0" prefWidth="232.0" BorderPane.alignment="CENTER" />
+         </left>
+      </BorderPane>
+   </children>
+</AnchorPane>

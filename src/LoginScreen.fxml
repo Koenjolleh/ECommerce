@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" stylesheets="@css/stylesheet.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="CredentialsController">
+   <children>
+      <Button fx:id="submitButton" layoutX="343.0" layoutY="281.0" mnemonicParsing="false" onAction="#handleSubmitBtn" prefHeight="57.0" prefWidth="121.0" text="Submit" />
+      <Label layoutX="165.0" layoutY="91.0" prefHeight="36.0" prefWidth="227.0" text="Username" />
+      <TextField fx:id="username" layoutX="165.0" layoutY="127.0" prefHeight="36.0" prefWidth="227.0" />
+      <Label layoutX="165.0" layoutY="163.0" prefHeight="36.0" prefWidth="227.0" text="Password:" />
+      <PasswordField fx:id="password" layoutX="165.0" layoutY="200.0" prefHeight="36.0" prefWidth="227.0" />
+      <Label fx:id="credentialsFeedback" layoutX="135.0" layoutY="236.0" prefHeight="36.0" prefWidth="300.0" />
+      <Button fx:id="backButton" layoutX="113.0" layoutY="281.0" mnemonicParsing="false" onAction="#handleBackBtn" prefHeight="57.0" prefWidth="121.0" text="Back" />
+   </children>
+</AnchorPane>

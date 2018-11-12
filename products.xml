@@ -1,0 +1,53 @@
+<object-stream>
+  <list>
+    <Product>
+      <id>1</id>
+      <name>World of Warcraft</name>
+      <description>One of the greatest and most popular MMORPGs of all time still counting over 5 million players</description>
+      <cost>299.95</cost>
+      <category>MMORPG</category>
+    </Product>
+    <Product>
+      <id>2</id>
+      <name>Starcraft 2</name>
+      <description>It&apos;s Jim Raynor with a rag tag band of outlaws against
+the evil emporor Arcturusk Mengsk. Classic Star Wars scenario</description>
+      <cost>399.95</cost>
+      <category>RTS</category>
+    </Product>
+    <Product>
+      <id>3</id>
+      <name>Warcraft 3</name>
+      <description>The origin of all your favorite lore
+characters from the warcraft universe.
+Including Arthas, Thrall and Sylvanas</description>
+      <cost>99.95</cost>
+      <category>RTS</category>
+    </Product>
+    <Product>
+      <id>4</id>
+      <name>Counter Strike</name>
+      <description>It&apos;s Terrorists... VS.
+Counter Terrorists.
+Classic stand off</description>
+      <cost>199.95</cost>
+      <category>FPS</category>
+    </Product>
+    <Product>
+      <id>5</id>
+      <name>League of Legends</name>
+      <description>The game that copied the gameplay
+of the WC3 mod DOTA and made it
+a global phenomenon</description>
+      <cost>99.95</cost>
+      <category>MOBA</category>
+    </Product>
+    <Product>
+      <id>6</id>
+      <name>PUBG</name>
+      <description>FARTNITE</description>
+      <cost>99.95</cost>
+      <category>BR</category>
+    </Product>
+  </list>
+</object-stream>

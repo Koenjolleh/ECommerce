@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" stylesheets="@css/stylesheet.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="CredentialsController">
+   <children>
+      <Button fx:id="signUpButton" layoutX="344.0" layoutY="300.0" mnemonicParsing="false" onAction="#handleSignUpBtn" prefHeight="57.0" prefWidth="129.0" text="Sign up" />
+      <Label layoutX="151.0" layoutY="23.0" prefHeight="34.0" prefWidth="250.0" text="Enter username:" />
+      <Label layoutX="151.0" layoutY="91.0" prefHeight="34.0" prefWidth="250.0" text="Enter password:" />
+      <TextField fx:id="registerUsername" layoutX="151.0" layoutY="57.0" prefHeight="34.0" prefWidth="250.0" />
+      <PasswordField fx:id="registerPassword" layoutX="151.0" layoutY="125.0" prefHeight="34.0" prefWidth="250.0" />
+      <Label layoutX="151.0" layoutY="159.0" prefHeight="34.0" prefWidth="250.0" text="Confirm password:" />
+      <Label fx:id="registerCredentialsFeedback" layoutY="227.0" prefHeight="57.0" prefWidth="601.0" />
+      <PasswordField fx:id="registerPasswordConfirmation" layoutX="151.0" layoutY="193.0" prefHeight="34.0" prefWidth="250.0" />
+      <Button fx:id="backButton" layoutX="99.0" layoutY="300.0" mnemonicParsing="false" onAction="#handleBackBtn" prefHeight="57.0" prefWidth="129.0" text="Back" />
+   </children>
+</AnchorPane>

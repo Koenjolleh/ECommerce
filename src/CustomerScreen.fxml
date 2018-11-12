@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" stylesheets="@css/stylesheet.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="InventoryController">
+   <children>
+      <BorderPane prefHeight="400.0" prefWidth="600.0">
+         <top>
+            <VBox prefHeight="41.0" prefWidth="600.0" BorderPane.alignment="CENTER">
+               <children>
+                  <Label prefHeight="20.0" prefWidth="615.0" text="Choose category" />
+                  <ComboBox fx:id="customerComboCategory" onAction="#changedCategoryComboCustomer" prefHeight="31.0" prefWidth="600.0" />
+               </children>
+            </VBox>
+         </top>
+         <right>
+            <VBox prefHeight="235.0" prefWidth="204.0" BorderPane.alignment="CENTER">
+               <children>
+                  <Label prefHeight="37.0" prefWidth="207.0" text="Enter product id:" />
+                  <TextField fx:id="customerId" prefHeight="37.0" prefWidth="204.0" />
+                  <Label prefHeight="41.0" prefWidth="206.0" text="Quantity:" />
+                  <TextField fx:id="customerQuantity" prefHeight="38.0" prefWidth="204.0" />
+                  <Button mnemonicParsing="false" onAction="#handleAddToCartBtn" prefHeight="57.0" prefWidth="204.0" text="Add To Cart" />
+                  <Button mnemonicParsing="false" onAction="#handleDeleteFromCartBtn" prefHeight="58.0" prefWidth="204.0" text="Delete From Cart" />
+                  <Button mnemonicParsing="false" onAction="#handleCustomerReadBtn" prefHeight="57.0" prefWidth="228.0" text="Product Details" />
+               </children></VBox>
+         </right>
+         <bottom>
+            <HBox prefHeight="60.0" prefWidth="600.0" BorderPane.alignment="CENTER">
+               <children>
+                  <Button fx:id="backButton" mnemonicParsing="false" onAction="#handleBackBtn" prefHeight="60.0" prefWidth="118.0" text="Back" />
+                  <Label fx:id="customerFeedback" prefHeight="75.0" prefWidth="519.0" />
+               </children>
+            </HBox>
+         </bottom>
+         <center>
+            <TextArea fx:id="customerCart" prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER" />
+         </center>
+         <left>
+            <TextArea fx:id="customerDisplay" prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER" />
+         </left>
+      </BorderPane>
+   </children>
+</AnchorPane>
